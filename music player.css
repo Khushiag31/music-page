@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.header{
+    height: 60px;
+    background-color: rgb(200, 118, 169);
+    box-shadow:  8px 8px 8px 10px rgb(214, 15, 99) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h2{
+    color: rgb(115, 13, 46);
+}
+.main{
+    width: 100vw;
+    height: 91vh;
+   display: flex;   
+    background-color: rgb(221, 143, 191);
+}
+.left{
+    width: 50%;
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.songimg{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: url("checked.jpg");
+    background-size: cover;
+    box-shadow: 2px 2px 25px  rgb(214, 15, 99) ;
+}
+.volume{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+#range{
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 10px;
+    border-radius:10px;
+  background: linear-gradient(to left,rgb(255, 104, 222),rgb(246, 64, 161));
+}
+/* for slider circle */
+#range  range2::-webkit-range-thumb{
+    -webkit-appearance: none;
+    background-color: rgb(202, 26, 199);
+    border: 2px solid white;
+}
+#icon3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: rgb(238, 143, 201);
+    box-shadow:2px 2px 17px  rgb(214, 15, 99)  ;
+    cursor: pointer;
+}
+.right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    /* border: 2px solid red; */
+}
+.rect{
+    background-color: rgb(238, 143, 201);
+    box-shadow: 2px 2px 15px 10px rgb(189, 36, 87) ;
+    width: 370px;
+    height: 75px;
+    border-radius: 10px;
+   text-align: center;
+   padding-top: 10px;
+}
+#song-name{
+    font-size: 25px;
+    font-weight: 550;
+    color:  rgb(115, 13, 46);
+}
+#range2{
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 40%;
+    height: 10px;
+    border-radius:10px;
+  background: linear-gradient(to left,rgb(255, 104, 222),rgb(246, 64, 161));
+}
+.music-icon{
+    padding: 5px;   
+}
+#prev,#play,#next{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(238, 143, 201);
+    box-shadow: 2px 2px 10px rgb(214, 41, 99) ;
+    cursor: pointer;
+}

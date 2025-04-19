@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music player.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="mus2.svg" id="icon1">
+            <h2>LISTENING YOUR FAV MUSIC</h2>
+            <img src="mus1.svg" id="icon2">
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="songimg"></div>
+                <div class="volume">
+                    <div class="vicon">
+                        <img src="mus3.svg" id="icon3" onclick="volMute()">
+                    </div>
+                    <input type="range" id="range" onchange="volume()">
+                </div>
+            </div>
+            <div class="right">
+                <div class="rect">
+                    <div id="song-name">ve kamleya </div>
+                    <div id="singer-name">arijit singh</div>
+                </div>
+                <input type="range" id="range2" onchange="duration()">
+                <div class="music-icon">
+                    <img src="back.svg" id="prev" onclick="previousSong()">
+                    <img src="play3.svg" id="play" onclick="playPause()">
+                    <img src="forward.svg" id="next" onclick="nextSong()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="music player.js"></script>
+</body>
+
+</html>
